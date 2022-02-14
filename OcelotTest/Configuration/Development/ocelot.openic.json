@@ -1,0 +1,19 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "ic-api-dev.frontsrv.com",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/api/openic/{everything}",
+      "UpstreamHttpMethod": [],
+      "HttpHandlerOptions": {
+        "UseProxy":  true 
+      }
+    }
+  ]
+}
